@@ -1,2 +1,357 @@
-test
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(24, 24, 24);
+}
+.menu{
+    background-image: linear-gradient(black,transparent);
+    width:100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top:10px;
+    margin-bottom: -10px;
+    z-index: 3;
+    position: fixed;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.list_links{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.list_item{
+    margin-right: 1.5em;
+}
+.list_item a{
+    text-decoration: none;
+    color: rgb(201, 201, 201); 
+}
+.list_item a:hover{
+    color: white;
+}
+.logo{
+    text-align: center;
+    margin-right: 2em;
+    
+    font-size: 2em;
+    font-weight: bold;
+}
+.logo a{
+    color: red;
 
+}
+.capa_fundo{
+    background-image: url(./imgs/capaFundo/jogosvorazes2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 200vh;
+    margin: 0 auto;
+    margin-top: 0px;
+    height: 95vh;
+    
+}
+.botoes{
+    padding-top: 28em;
+    padding-left: 3em;
+    border: none;
+    display: flex;
+    flex-direction: row;
+}
+.btn_one{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 0.3em;
+    display: flex;
+    justify-content: center;
+    margin-right: 1em;
+    transition: 0.5s;
+}
+.btn_one > span{
+    margin-right: 10px;   
+    font-size: 1.3em;
+}
+.btn_one:hover{
+    background-color: #3d3d3d;
+    color: rgb(255, 255, 255);
+}
+.btn_two{
+    background-color: #3d3d3d;
+    color: white;
+    border: none;
+    border-radius: 0.3em;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+}
+.btn_two > span{
+    transform: rotate(180deg);
+    margin-right: 10px;
+    font-size: 1.3em;
+    text-align: center;
+}
+.btn_two:hover{
+    background-color: white;
+    color: black;
+}
+.botoes button{
+    font-size: 1.5em;
+    padding: 0.2em;
+    padding-right: 0.5em;
+}
+/*
+***********
+*/
+
+.title{
+    font-size: 1rem;
+    color: white;
+    padding-top: 0.5em;
+    padding-left: 3.5em;
+}
+.title_one{
+    font-size: 1rem;
+    color: white;
+    margin-top: -1.7em;
+    padding-left: 3.5em;
+}
+.user{
+    width: 50px;
+    border-radius: 50%;
+}
+.logo_social{
+    width: 30px;
+}
+footer{
+    margin-top: 6em;
+    margin-bottom: 2em;
+ 
+    font-size: 13px;
+
+}
+footer .foter{
+    
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  justify-content: space-around;
+}
+.list_foter{
+    list-style: none;
+    
+}
+.list_item_foter{
+    padding-bottom: 1em;
+}
+.list_item_foter a{
+    text-decoration: none;
+    color: #ccc; 
+}
+.list_item_foter a:hover{
+    color: white;
+}
+.offcanvas{
+    background-color: #3d3d3d;
+    color: white;
+}
+#offcanvasWithBothOptions{
+    width: 250px;
+}
+#botaoHamburguer{
+    display: none;
+}
+.logo_two{
+    display: none;
+}
+
+
+.swiper{
+    width: 100%;
+    max-width: 100%;
+    
+}
+.swiper-wrapper{
+    margin-left: 100px;
+    
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:-50px;
+    height: 350px;
+    position: relative;
+}
+    
+.swiper-slide img {
+    display: block;
+    width: 200px;
+    height: 170px;
+    object-fit: cover;
+    
+}
+.imgs{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    padding: 1px;
+}
+.imgs:hover{
+    padding: -10px;
+    z-index: 5;
+    transform: scale(1.2);
+}
+
+.bartt{
+    width: 40px;
+    margin-right: 10px ;
+}
+.divisao{
+    width: 100%;
+    max-width: 100% ;
+    margin: 0;
+    padding: 0; 
+}
+.item_ofcanvas{
+    font-size: 15px;
+    margin-bottom: 12px;
+    padding-top: 0px;
+}
+
+.swiper-button-next,.swiper-button-prev{
+    color: red;
+}
+.offcanvas-title{
+    color: red;
+    font-weight: bold;
+}
+
+/* Estilos para computadores */
+@media only screen and (min-width: 1024px) {
+    /* Adicione seus estilos aqui */
+
+
+  }
+  
+  /* Estilos para tablets */
+  @media only screen and (min-width: 568px) and (max-width: 1023px) {
+    /* Adicione seus estilos aqui */
+  }
+  
+
+
+
+  /* Estilos para celulares */
+  @media only screen and (max-width: 770px) {
+    /* Adicione seus estilos aqui */
+    .capa_fundo{
+        background-position: center;
+        width: 100%;
+        max-width: 100vh;
+        margin-top: 0px;
+        height: 50vh;
+        margin: 0 auto;
+    }
+    .btn_one,.btn_two{
+        display: none;
+    }
+    
+    .botoes{
+        
+        padding-top: 6em;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        margin-left: -2em;
+    }
+    .botoes button{
+        font-size: 0.8em;
+        
+        
+        
+    }
+
+    .menu{
+        background-image: linear-gradient(black,transparent);
+        width:100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 5px;
+        z-index: 3;
+        position: fixed;
+    }
+
+    .navigation{
+        display: flex;
+        justify-content:left;
+        flex-wrap: wrap;
+        
+    }
+    .logo{
+        text-align: center;
+        font-size: 1.6em;
+        margin-right: 7px;
+        margin-left: -1em;
+    }
+    #botaoHamburguer{
+        display: block;
+        background-color: transparent;
+        border: none;
+        margin-bottom: 16px;
+    }
+    .logo_two{
+        display: block;
+    }
+    .itemm{
+        display: none;
+    }
+    
+    footer .foter{
+    
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .title{
+        font-size: 1.1em;
+        color: white;
+        padding-top: 0.5em;
+        text-align: center;
+        padding: 0.3em;
+        margin-bottom: -3em;
+    }
+    .title_one{
+        font-size: 1em;
+        color: white;
+        text-align: center;
+        padding-left: 0.3em;
+        margin-bottom: -3em;
+    }
+
+    .imgs{
+        margin-left: -4em;
+        transition: 0.5s;
+        z-index: 2;
+        padding: 1px;
+    }
+    .imgs:hover{
+        z-index: 5;
+        transform: scale(1.1);
+    }
+    
+}
