@@ -238,22 +238,6 @@ footer .foter{
     color: red;
     font-weight: bold;
 }
-
-/* Estilos para computadores */
-@media only screen and (min-width: 1024px) {
-    /* Adicione seus estilos aqui */
-
-
-  }
-  
-  /* Estilos para tablets */
-  @media only screen and (min-width: 568px) and (max-width: 1023px) {
-    /* Adicione seus estilos aqui */
-  }
-  
-
-
-
   /* Estilos para celulares */
   @media only screen and (max-width: 770px) {
     /* Adicione seus estilos aqui */
@@ -322,11 +306,9 @@ footer .foter{
     footer .foter{
     
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-      }
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;    
+    }
       .title{
         font-size: 1.1em;
         color: white;
